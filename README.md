@@ -20,11 +20,18 @@ Add item no .eslinrc.json->Rules: "react/react-in-jsx-scope": "off",
 
 Erros são resolvidos executando o seguinte comando:
 
-### `npx eslint ./src –fix`
+### `npx eslint ./src --fix`
 
 Instalando o React-Router-Dom
 
 ### `npm i react-router-dom`
+
+### Navegação programática
+import { useNavigate } from 'react-router-dom';
+
+navigate(`/prato/${prato.id}`, {state:{...prato}}, replace:true);
+
+O parametro replace não permite o empilhamento do history
 
 # Getting Started with Create React App
 
